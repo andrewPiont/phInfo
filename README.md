@@ -2,6 +2,7 @@
 layout: default
 title: Raspberry Pi Content Server
 ---
+[![CircleCI](https://circleci.com/gh/alexKleider/phInfo.svg?style=svg)](https://circleci.com/gh/alexKleider/phInfo)
 # The Raspberry Pi as a Content Server
 
 ## Introduction
