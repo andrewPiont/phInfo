@@ -30,7 +30,7 @@ else
     exit 1
 fi
 # Checking that the MYSQL_PASSWORD env var is set:
-if [ -z $MYSQL_PASSWORD ]
+if [ -z "$MYSQL_PASSWORD" ]
 then
     echo "The MYSQL_PASSWORD environment variable hasn't been set!"
     echo "Script pathagar-setup.sh is being aborted."
@@ -69,6 +69,7 @@ else
 fi
 cd ~/pathagar
 echo "... and activated."
+# shellcheck disable=SC1091
 source penv/bin/activate
 echo "Now installing (takes a long time) requirements..."
 pip install -r requirements.pip

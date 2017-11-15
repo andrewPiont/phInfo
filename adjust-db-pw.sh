@@ -6,7 +6,7 @@
 # Checks that the env var MYSQL_PASSWORD has already been set
 # and that the target files are present.
 
-if [ -z $MYSQL_PASSWORD ]
+if [ -z "$MYSQL_PASSWORD" ]
 then
     echo "MYSQL_PASSWORD variable has not been set- ABORTING!"
     exit 1
@@ -20,7 +20,7 @@ then
     echo "  a. set-db-pw.sh"
     echo "  b. local_settings.py"
 
-    sed -i s/MYSQL_PASSWORD/$MYSQL_PASSWORD/g set-db-pw.sh local_settings.py
+    sed -i s/MYSQL_PASSWORD/"$MYSQL_PASSWORD"/g set-db-pw.sh local_settings.py
 
     echo "Password has been moved to the appropriate two files."
 else

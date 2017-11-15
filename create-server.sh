@@ -1,3 +1,4 @@
+#!/bin/bash
 # File: create_server.sh
 
 # File last modified Thu May 25 11:36:11 PDT 2017
@@ -131,8 +132,6 @@ echo "   | The reboot will probably fix everything.        |"
 echo "   |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|"
 
 sudo shutdown -r now
-
-fi
 
 ## Foot Note:
 
